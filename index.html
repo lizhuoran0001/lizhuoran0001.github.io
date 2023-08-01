@@ -96,7 +96,7 @@
                     </p>
                   
                     <p style="font-size:18px">
-                        I worked on research projects concerning Static Timing Analysis, Statistical Timing Analysis, and Timing Optimization with <a href="https://ic.seu.edu.cn/caopeng/" class="text-info">Prof. Peng Cao</a>'s group at Southeast University. In addition to that, I did a project on track calibration via roadblock recognition and positioning supervised by <a href="https://engineering.uci.edu/users/quoc-viet-dang" class="text-info">Prof. Quoc-Viet Dang</a> at UC Irvine.
+                        I worked on several research projects concerning Static Timing Analysis, Statistical Timing Analysis, and Timing Optimization with <a href="https://ic.seu.edu.cn/caopeng/" class="text-info">Prof. Peng Cao</a>'s group at Southeast University. In addition to that, I did a project on track calibration via roadblock recognition and positioning supervised by <a href="https://engineering.uci.edu/users/quoc-viet-dang" class="text-info">Prof. Quoc-Viet Dang</a> at UC Irvine.
                     </p>
                 </div>
             </div> 
@@ -116,30 +116,34 @@
             
             <!-- Projects -->
             <div>
-                <h2 id="projects">Projects</h2>
+                <h2 id="projects">Selected Projects</h2>
                 <ul>
-                <li class="paper" words="DSGD">
-                    <b>Second-Order Convergence of Distributed SGD with Communication Compression</b><br>
-                    <i>May 2022 – present</i>
+                <li class="paper" words="SSTAM">
+                    <b>Cell Delay Statistical Timing Model for Input Slew Variation</b><br>
+                    <i>March 2023 – June 2023</i>
                     <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                        We designed a distributed SGD algorithm with a novel error-feedback mechanism for communication compression, and proved a high-probability bound for the convergence to second-order stationary points of the proposed algorithm by showing the saddle-escaping property with the coupling sequence technique.
-                        The proof managed to remove the commonly used assumptions on local objective similarity, making our algorithm able to accommodate the federated learning settings.
+                        We investigated the relationship between input slew variation and the statistical distribution of cell delay in on-chip variations. 
+                        While constructing the nominal model for cell delay, we adopted a piecewise function approximation curve that includes a logarithmic function to represent the input voltage curve. 
+                        This approach enabled the unified algebraic solution of output voltage for each unit level. 
+                        Building upon this, we analyzed the partial differential relationships between variances concerning cell delay, threshold voltage, and input slew for more accurate statistical cell/path delay modeling.
                     </p>
                 </li>
-                <li class="paper" words="ITCSC">
-                    <b>Provably fast algorithms for joint community detection and group synchronization</b><br>
-                    <i>Jun 2021 – Dec 2021</i>
+                <li class="paper" words="RTC">
+                    <b>Identification and Tracking of Roadside Cones for Racing Track Calibration</b><br>
+                    <i>June 2022 – August 2022</i>
                     <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    We proposed a generalized power method (GPM) with spectral initialization to solve a joint problem of group synchronization and community detection. We established an estimation error bound for the spectral initialization using random matrix and random graph arguments, and proved the linear convergence guarantee for GPM, ensuring a significantly lower time complexity than the state-of-the-art semidefinite relaxation method.
+                        We used template matching and filters to recognize cones in in-car perspective video frames, then designed a function with the speed and the steering of the car to predict the movement of cones.
+                        Based on that we constructed optimization models to calibrate GPS locations of the track according to the difference of relative positions between the cones and the car.
                     </p>
                 </li>
-                <li class="paper" words="EngSumInt">
-                    <b>3D object detection based on point clouds in autonomous driving scenes</b><br>
-                    <i>Jun 2020 – Nov 2020</i>
+                <li class="paper" words="STATO">
+                    <b>Timing Analysis and Optimization of Interdependent Flip-flop Timing Model for NTV Design</b><br>
+                    <i>August 2021 – October 2022</i>
+                    <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
+                        We established a timing analysis and optimization framework for NTV circuit design by leveraging the interdependency between the setup/hold time and clock-to-q delay for flip-flops to improve circuit performance without any additional area and power cost.
+                        To accomplish it, we proposed an iterative circuit optimization method by integrating the ANN-based interdependent timing model into STA flow to minimize the clock period without any timing violations by balancing the timing slacks among iteratively selected paths.
+                    </p>
                 </li>
-                <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    We designed 3D convolutional neural network models for autonomous driving scenes. I proposed data augmentation methods for performance improvement and validated their efficiency for model training on the benchmark dataset KITTI.
-                </p>
                 </ul>
             </div>
           
@@ -148,22 +152,25 @@
                 <h2 id="honors">Honors and Awards</h2>
                 <ul>
                     <li>
-                        Hong Kong SAR Government Scholarship
+                        National Scholarship for academic year 2020-2021, awarded by China’s Ministry of Education & Southeast University (0.2% nationwide).
                     </li>
                     <li>
-                        S.H. Ho College Annual Scholarship for Outstanding Academic Performance
+                        Zhongnan Scholarship for Realizing Dreams for academic year 2020-2021, awarded to 1 student in School of Electronic Science & Engineering.
                     </li>
                     <li>
-                        CSE Department Award for Outstanding Academic Performance
+                        1st Prize, The Advanced Mathematics Competition for Undergraduates at Southeast University (2%, 09/2020)
                     </li>
                     <li>
-                        Best Project Award of Summer Research Internship
+                        1st Prize, The 17th Advanced Mathematics Competition for Undergraduates in Jiangsu Province (3.5%, 11/2020)
                     </li>
                     <li>
-                        VTech Group of Companies Scholarship
+                        1st Prize, The 12th National College Mathematics Competition (7%, 12/2020)
                     </li>
                     <li>
-                        ELITE Stream Scholarship
+                        Southeast University Single-course Scholarships (top 5% in seven major courses)
+                    </li>
+                    <li>
+                        Individual Scholarship for Excellence in Social Work for academic year 2020-2021, awarded to 1 student in School of Electronic Science & Engineering.
                     </li>
                 </ul>
             </div>
